@@ -1,0 +1,109 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    .body {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .left-side {
+        max-width: 500px;
+        .content {
+          h1 {
+            font-size: 70px;
+            color: white;
+            font-weight: 200;
+            margin: 0;
+          }
+          p {
+            font-size: 18px;
+            font-weight: 400;
+          }
+          .action-btn {
+            margin-top: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .btn {
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 25px;
+              padding: 15px;
+              border: none;
+              outline: none;
+              background: none;
+              border-radius: 5px;
+              color: black;
+              text-decoration: none;
+              .icon-block {
+                padding-right: 10px;
+              }
+              &:hover {
+                background: #f6faf9;
+              }
+            }
+            .input-block {
+              margin-left: 20px;
+              display: flex;
+              flex: 1;
+              .input-section {
+                position: relative;
+                margin-right: 10px;
+                .icon-block {
+                  position: absolute;
+                  top: 50%;
+                  transform: translate(20px, -50%);
+                  color: #5f6368;
+                }
+              }
+            }
+          }
+        }
+        .help-text {
+          margin-top: 30px;
+          padding-top: 25px;
+          border-top: 1px solid #ddd;
+          a {
+            text-decoration: none;
+            color: black;
+            font-weight: 100;
+          }
+        }
+      }
+      .right-side {
+        .content {
+          border: 0.5px solid #eee;
+          padding: 10px;
+          width: 100%;
+          max-width: 650px;
+          border-radius: 5px;
+          box-sizing: border-box;
+          box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+            0 2px 6px 2px rgba(60, 64, 67, 0.149);
+          img {
+            width: 100%;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+  .svg-inline--fa.fa-w-18 {
+    width: 2em;
+}
+a {
+  color: black;
+  text-decoration: wavy;
+  font-weight: 500;
+}
+.home-page .body .left-side .content p {
+  font-size: 18px;
+  font-weight: 500;
+}
+p {
+  margin-top: revert;
+  margin-bottom: 1rem;
+}

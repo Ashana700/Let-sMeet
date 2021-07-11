@@ -1,0 +1,44 @@
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 65px;
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    .action-btn {
+        display: flex;
+        align-items: center;
+        .icon-block {
+            font-size: 20px;
+            padding: 10px;
+            color: #5f6368;
+        }
+    }
+}
+.logo {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    margin-top: 0%;
+    img{
+        width: 100%;
+    }
+    .help-text{
+        font-size: 22px;
+        padding-left: 4px;
+        color: #5f6368;
+    }
+}
+.home {
+    font-size: 20px;
+    padding-right: 10px;
+}
