@@ -1,1 +1,3 @@
 # Let-sMeet
+
+THE CODE IS IN MASTER BRANCH
