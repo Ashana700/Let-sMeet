@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'paper';
+import {Paper } from '@material-ui/core';
 import App from './App';
 import { ContextProvider } from './SocketContext';
 import './styles.css';
