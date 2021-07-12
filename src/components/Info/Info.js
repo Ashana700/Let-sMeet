@@ -26,8 +26,8 @@ const Info = () => {
         />
       </div>
       <p className="info-text">                                                                     
-        Go ahead and enter your name then either copy your id(from that left blue button) and ask your friend to call you
-        or ask your friend to give his id and then call him.
+        Go ahead and enter your name then either copy your id(from that left blue button) and ask your friend to call on that id 
+        or the other way round.
         Enjoy!  
       </p>
       <p className="small-text">Click the red phone icon to leave.</p>
