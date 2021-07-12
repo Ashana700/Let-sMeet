@@ -3,6 +3,8 @@ import { faVideo } from "@fortawesome/free-solid-svg-icons";
 import Header from "../Header/Header";
 import './HomePage.scss';
 
+//first page of the website
+
 const HomePage = () => {
 
     return (
@@ -18,7 +20,7 @@ const HomePage = () => {
                         <div className="action-btn">
                             <button className="btn white" >
                                 <FontAwesomeIcon className="icon-block" icon={faVideo} />
-                                <a href="/connected">New Meeting</a>
+                                <a href="/connected">New Meeting</a>                          {/* enter the call page upon clicking this icon */}
                             </button>
                         </div>
                     </div>

@@ -9,7 +9,7 @@ const Info = () => {
  console.log("info called");
 
  const close = () => {
-   document.getElementById('info').style.visibility="hidden";
+   document.getElementById('info').style.visibility="hidden";                            
    console.log("hiddencommand");
  }
 
@@ -22,11 +22,10 @@ const Info = () => {
         <FontAwesomeIcon
           className="icon"
           icon={faTimes}
-          onClick={close}
+          onClick={close}                                                       /* info box closes upon clicking the cross button */
         />
-  
       </div>
-      <p className="info-text">
+      <p className="info-text">                                                                     
         Go ahead and enter your name then either copy your id(from that left blue button) and ask your friend to call you
         or ask your friend to give his id and then call him.
         Enjoy!  

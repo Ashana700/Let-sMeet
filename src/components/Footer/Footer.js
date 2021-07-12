@@ -19,8 +19,7 @@ const Footer = () => {
     let interval = null;
     const [currentTime, setCurrentTime] = useState(() => {
     return formatDate();
-    });
-
+    });                                                                                                  {/* displays the current time */}
     useEffect(() => {
     interval = setInterval(() => setCurrentTime(formatDate()), 1000);
     return () => {
@@ -32,12 +31,12 @@ const Footer = () => {
     const [isVideo, setIsVideo] = useState(true);
 
     const toggleAudio = (value) => {
-        stream.getAudioTracks()[0].enabled = value;
+        stream.getAudioTracks()[0].enabled = value;                                      {/* mute or unmute upon clicking the microphone button */}
         setIsAudio(value);
     }  
 
     const toggleVideo = (value) => {
-        stream.getVideoTracks()[0].enabled = value;
+        stream.getVideoTracks()[0].enabled = value;                                     {/* switch on or off camera upon clicking the video button */}
         setIsVideo(value);
     }
 
@@ -52,25 +51,24 @@ const Footer = () => {
             </div>
             <div className="center-item">
                 <div className={`icon-block $(!isAudio ? "res-bg" : null)`} 
-                      onClick={() => toggleAudio(!isAudio)} >                                         {/* toggle audio upon clicking the icon */}
+                      onClick={() => toggleAudio(!isAudio)} >                                      {/* microphone icon for audio control */}
                 <FontAwesomeIcon className="icon" 
                 icon={isAudio ? faMicrophone : faMicrophoneSlash} />
                 </div>
                 <div className="icon-block" >
-                    <a href="/disconnected">
-                    <FontAwesomeIcon className="icon red" icon={faPhone}>
-                       <span class="onhover">Leave</span>
+                    <a href="/disconnected">                                                         
+                    <FontAwesomeIcon className="icon red" icon={faPhone}>                     {/* leave the page entirely upon clicking the icon  */}
                         </FontAwesomeIcon>
                     </a>
                 </div>
                 <div className={`icon-block $(!isVideo ? "res-bg" : null)`} 
-                       onClick={() => toggleVideo(!isVideo)} >                                        {/* toggle video upon clicking the icon */}
+                       onClick={() => toggleVideo(!isVideo)} >                                       {/* toggle video upon clicking the icon */}
                 <FontAwesomeIcon className="icon" icon={isVideo ? faVideo : faVideoSlash} />
                 </div>
             </div>
             <div className="right-item">
                 <div className="icon-block">
-                    <p className="title">{currentTime}</p>                                                     {/* diplays current time */}
+                    <p className="title">{currentTime}</p>                                                   {/* diplays current time */}
                 </div>
             </div>
         </div>
