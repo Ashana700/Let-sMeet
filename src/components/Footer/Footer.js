@@ -19,7 +19,7 @@ const Footer = () => {
     let interval = null;
     const [currentTime, setCurrentTime] = useState(() => {
     return formatDate();
-    });                                                                                                  {/* displays the current time */}
+    });                                                                                                  /* displays the current time */
     useEffect(() => {
     interval = setInterval(() => setCurrentTime(formatDate()), 1000);
     return () => {
@@ -31,12 +31,12 @@ const Footer = () => {
     const [isVideo, setIsVideo] = useState(true);
 
     const toggleAudio = (value) => {
-        stream.getAudioTracks()[0].enabled = value;                                      {/* mute or unmute upon clicking the microphone button */}
+        stream.getAudioTracks()[0].enabled = value;                                      /* mute or unmute upon clicking the microphone button */
         setIsAudio(value);
     }  
 
     const toggleVideo = (value) => {
-        stream.getVideoTracks()[0].enabled = value;                                     {/* switch on or off camera upon clicking the video button */}
+        stream.getVideoTracks()[0].enabled = value;                                     /* switch on or off camera upon clicking the video button */
         setIsVideo(value);
     }
 

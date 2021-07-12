@@ -66,12 +66,12 @@ const Options = ( {children} ) => {
                   { callAccepted && !callEnded ? (
                      <Button variant="contained" color="secondary" startIcon={<PhoneDisabled fontSize="large" />} fullWidth 
                            onClick={leaveCall} className={classes.margin}>
-                       Hang Up                                                                                                  {/*to end the call*/}
+                      Hang Up                                                                                                  {/*to end the call*/}
                      </Button>
                   ): (
                     <Button variant="contained" color="primary" startIcon={<Phone fontSize="large" />} fullWidth 
                            onClick={() => callUser(idToCall)} className={classes.margin}>
-                    Call                                                                                                         {/* call is made */}
+                      Call                                                                                                       {/* call is made */}
                     </Button> 
                   )}
                 </Grid>

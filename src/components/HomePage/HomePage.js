@@ -24,12 +24,12 @@ const HomePage = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="help-text">                        
+                    <div className="help-text">
                     </div>
                 </div>
                 <div className="right-side">
                     <div className="content">
-                        <img src="https://www.dougallfraser.com/wp-content/uploads/2021/04/laurenlaptop.png" />
+                        <img src="https://www.dougallfraser.com/wp-content/uploads/2021/04/laurenlaptop.png" alt="error in loading" />
                     </div>
                 </div>
             </div>

@@ -23,7 +23,7 @@ const SocketContext = createContext();
 
 
      const answerCall = () => {
-         setCallAccepted(true);                                          {/*the user can accept the call and start video chatting with his peer*/}
+         setCallAccepted(true);                                          /*the user can accept the call and start video chatting with his peer*/
 
          const peer = new Peer({ initiator: false, trickle: false, stream});
 
@@ -41,7 +41,7 @@ const SocketContext = createContext();
 
     }
 
-    const callUser = (id) => {                                                {/* a call is made upon entering the requird meeting id */}
+    const callUser = (id) => {                                                /* a call is made upon entering the requird meeting id */
         const peer = new Peer({ initiator: true, trickle: false, stream});
         
         peer.on('signal', (data) => {
@@ -61,7 +61,7 @@ const SocketContext = createContext();
         connectionRef.current = peer;
     }
 
-    const leaveCall = () => {                                                 {/* call ends and the page is reloaded */}
+    const leaveCall = () => {                                                 /* call ends and the page is reloaded */
         setCallEnded(true);
 
         connectionRef.current.destroy();
@@ -71,8 +71,8 @@ const SocketContext = createContext();
 
     return (
         <SocketContext.Provider value={{socket, call, callAccepted, myVideo, userVideo,
-                                       stream, name, setName, callEnded, me, callUser, leaveCall, 
-                                       answerCall, stream, setStream, setMe,setCall,}}>
+        stream, name, setName, callEnded, me, callUser, leaveCall, 
+        answerCall, setStream, setMe,setCall,}}>
            {children}
         </SocketContext.Provider>
     );
