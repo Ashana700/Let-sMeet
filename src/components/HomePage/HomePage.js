@@ -15,7 +15,7 @@ const HomePage = () => {
                     <div className="content">
                         <h1>Welcome!</h1>
                         <p>
-                            Feel the virtual world real with teams
+                            Feel the virtual world real with Let's Connect
                         </p>
                         <div className="action-btn">
                             <button className="btn white" >

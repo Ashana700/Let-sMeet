@@ -10,7 +10,7 @@ const Header = () => {
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
   <div class="container-fluid">
     <div className="logo" >
-    <img src="https://vir2ue.com/Microsoft-Teams-Phone-System-Direct-Routing/images/ms-teams-logo.png" />     {/*logo of MS Teams*/}
+     <img src ="https://www.pngfind.com/pngs/m/588-5881278_lets-connect-logo-png-download-lets-connect-transparent.png" /> 
     </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
