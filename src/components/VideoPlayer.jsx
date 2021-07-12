@@ -34,7 +34,7 @@ const VideoPlayer = () => {
     const classes = useStyles();
 
     useEffect(() => {
-      navigator.mediaDevices.getUserMedia({ video: true, audio: true })           
+      navigator.mediaDevices.getUserMedia({ video: true, audio: true })                /* asks for permission for audio and video */
         .then((currentStream)  => {
             setStream(currentStream);
     
@@ -49,8 +49,7 @@ const VideoPlayer = () => {
     }, []); 
 
     return (
-        <Grid container className = {classes.gridContainer}>
-           {/* our own video */}
+        <Grid container className = {classes.gridContainer}>                                       {/* our own video */}
 
             {
                   stream && (
@@ -63,11 +62,9 @@ const VideoPlayer = () => {
                     </Grid>
                     </Paper>
                   )        
-            }
-
-            {/* other user's video */}
-
-            {
+            }                                                                                  
+                                                                                                   {/* other user's video */}  
+            {                                                                                  
               callAccepted && !callEnded && (
                 <Paper className={classes.Paper}>
                 <Grid item xs={12} md={6}>

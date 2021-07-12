@@ -38,10 +38,13 @@ const useStyles = makeStyles((theme) => ({
     },
    }));
 
+
+
 const Options = ( {children} ) => {
     const { me, callAccepted, name, setName, callEnded, leaveCall, callUser } = useContext(SocketContext);
     const [ idToCall, setIdToCall ] = useState('');
     const classes = useStyles();
+
     return (
         <Container className={classes.container}>
           <Paper elevation={10} className={classes.paper}>
@@ -53,7 +56,7 @@ const Options = ( {children} ) => {
                   {console.log(me)}
                   <CopyToClipboard text={me} className={classes.margin}>
                     <Button variant="contained" color="primary" fullWidth startIcon={<Assignment fontSize="large" />}>
-                      COPY YOUR ID
+                      COPY YOUR ID                                                                                {/* the generated id has to be copied from here */}
                     </Button>
                   </CopyToClipboard>
                 </Grid>
@@ -63,13 +66,13 @@ const Options = ( {children} ) => {
                   { callAccepted && !callEnded ? (
                      <Button variant="contained" color="secondary" startIcon={<PhoneDisabled fontSize="large" />} fullWidth 
                            onClick={leaveCall} className={classes.margin}>
-                       Hang Up
+                       Hang Up                                                                                                  {/*to end the call*/}
                      </Button>
                   ): (
                     <Button variant="contained" color="primary" startIcon={<Phone fontSize="large" />} fullWidth 
                            onClick={() => callUser(idToCall)} className={classes.margin}>
-                    Call
-                    </Button>
+                    Call                                                                                                         {/* call is made */}
+                    </Button> 
                   )}
                 </Grid>
               </Grid>
@@ -77,7 +80,8 @@ const Options = ( {children} ) => {
             {children}
           </Paper>
         </Container>
-    )
-}
+    );
+
+};
 
 export default Options;
